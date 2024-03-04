@@ -1,0 +1,248 @@
+
+CodePen Home
+_Mentalista - Projeto
+Eduardo
+HTML
+
+1
+
+<div class="container">
+
+2
+
+  <h1 class="page-title">
+
+3
+
+    ADIVINHE O NUMERO SECRETO :)
+
+4
+
+  </h1>
+
+5
+
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+
+6
+
+</div>
+
+7
+
+<a href="https://alura.com.br/" target="_blank">
+
+8
+
+  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+9
+
+  <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Ilustra%C3%A7%C3%A3o-c%C3%A9rebro+1.png">
+
+10
+
+</a>
+
+CSS
+
+1
+
+body {
+
+2
+
+  font-family: "Roboto Mono", monospace;
+
+3
+
+  text-align: center;
+
+4
+
+  background-image: url("https://media.discordapp.net/attachments/1163918675032674331/1174109468238282822/Premium_Vector_Glitch_game_over_background_FUNDO.jpg?ex=656665a7&is=6553f0a7&hm=1a0791b120b9456f4b60d8c594870b74539d3b2cc4ee71112d13073e42c65e52&=");
+
+5
+
+  background-color: #000000;
+
+6
+
+  background-size: cover;
+
+7
+
+  background-position: center top;
+
+8
+
+  background-repeat: no-repeat;
+
+9
+
+  height: 100vh;
+
+10
+
+}
+
+11
+
+​
+
+12
+
+.container {
+
+13
+
+  text-align: center;
+
+14
+
+  padding: 20px;
+
+15
+
+}
+
+16
+
+​
+
+17
+
+.page-title {
+
+18
+
+  color: #00FF00;
+
+19
+
+  margin: 0 0 5px;
+
+20
+
+}
+
+21
+
+​
+
+22
+
+.page-subtitle {
+
+23
+
+  color: #ffffff;
+
+24
+
+  margin-top: 5px;
+
+25
+
+}
+
+26
+
+​
+
+27
+
+.page-logo {
+
+28
+
+  width: 200px;
+
+29
+
+}
+
+30
+
+​
+
+31
+
+.alura-logo {
+
+32
+
+  width: 40px;
+
+33
+
+  position: absolute;
+
+34
+
+  top: 10px;
+
+35
+
+  right: 10px;
+
+36
+
+}
+
+37
+
+​
+
+38
+
+body > img {
+
+JS
+0 unsaved changes
+
+1
+
+var numeroSecreto = parseInt(Math.random() * 1001);
+
+2
+
+var contadorTentativas = 0;
+
+3
+
+var limiteTentativas = 5;
+
+4
+
+​
+
+5
+
+while(contadorTentativas < limiteTentativas) {
+
+6
+
+  
+
+7
+
+//while(chute != numeroSecreto) {
+
+8
+
+var chute = prompt('Digite um numero entre 0 e 1000');
+
+9
+
+contadorTentativas++; 
+
+10
+
+  
+
+11
+
+  if (chute == numeroSecreto) {
+
+Last saved semana passada
